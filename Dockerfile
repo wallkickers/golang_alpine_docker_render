@@ -6,4 +6,5 @@ COPY . .
 
 RUN go build -o main app/main.go
 
-CMD ["./main"]
+# CMD ["./main"]
+CMD ["go", "run", "./app/main.go"]
